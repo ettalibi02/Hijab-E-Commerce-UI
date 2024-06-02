@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Hijjab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <i class="fa-solid fa-bag-shopping fs-2" id="navbarimg"></i>
+                <span class="text-uppercase fw-lighter ms-2">A.Hijab</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa-regular fa-heart fs-4 "></i>
+                    <span class=" position-absolute top-0 start-100 translate-middle badge bg-primary-subtle ">10</span>
+
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa-solid fa-cart-shopping fs-4 "></i>
+                    <span class=" position-absolute top-0 start-100 translate-middle badge bg-primary-subtle ">6</span>
+
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa-solid fa-magnifying-glass fs-4 "></i>
+
+                </button>
+
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase text-dark">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#collection" class="nav-link text-uppercase text-dark">collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#special" class="nav-link text-uppercase text-dark">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#blogs" class="nav-link text-uppercase text-dark">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about" class="nav-link text-uppercase text-dark">about</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#popular" class="nav-link text-uppercase text-dark">popular</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#girls-essential" class="nav-link text-uppercase text-dark">girls essential</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top:104px">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-dark-emphasis">Best Collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-dark-emphasis">new arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-dark-emphasis">Best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-dark-emphasis">new season</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="#prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="#next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!--  end of header -->
+
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New collection</h2>
+
+            </div>
+            <div class="row g-0 ">
+                <div class="d-flex  flex-wrap justify-content-center  mt-5 filter-button-group">
+                    <button type="button" id="animation" class=" btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" id="animation" class=" btn btn-lg btn-spin  m-2 text-dark" data-filter=".best">Best Sellers</button>
+                    <button type="button" id="animation" class=" btn btn-lg btn-spin  m-2 text-dark" data-filter=".feat">featured</button>
+                    <button type="button" id="animation" class=" btn btn-lg btn-spin  m-2 text-dark" data-filter=".new">New Arrival</button>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="credit.jpeg" height="320px" class="w-100" height="460px">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Abaya multi-color :" comfortable and elegant".</i></p>
+                            <span class="fw-bold">200 MAD</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="Asian fashion.jpeg" height="320px" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Korean style :" cute, new fashion dress".</i></p>
+                            <span class="fw-bold">400 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="hutdress.jpeg" height="320px" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i> Winter dress :" made of warm,turtleneck and flowing
+                                    dress".</i></p>
+                            <span class="fw-bold">300 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="3rram.jpeg" height="320px" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Jilbab / Saudi Abaya :" tidy,loose and practical".</i>
+                            </p>
+                            <span class="fw-bold">200 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="abaya.jpeg" class="w-100">
+                            <span class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis
+                         d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Jilbab / Abaya nude color .</i></p>
+                            <span class="fw-bold">250 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class="collection-img position-relative">
+                            <img src="spring.jpeg" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Colorful summer dresses:"stylish,neat".</i></p>
+                            <span class="fw-bold">250 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class="collection-img position-relative">
+                            <img src="springhut.jpeg" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Colorful winter dresses:"stylish,neat,cute".</i></p>
+                            <span class="fw-bold">350 MAD</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class="collection-img position-relative">
+                            <img src="nesskoum.jpeg" class="w-100">
+                            <span
+                                class=" position-absolute  rounded-5 bg-primary-subtle text-dark-emphasis d-flex align-items-center justify-content-center ">Sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                            <p class="text-capitalize my-1"><i>Elegant dress :"classic and tidy".</i></p>
+                            <span class="fw-bold">220 MAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  end of collection -->
+
+
+    <!--  special products -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Selection</h2>
+            </div>
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special-khimar for wedding.jpeg" class="w-100" height="460px">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">White dress for weddings and special occasions with a
+                            layered Khimra " a Beautiful Crown as a gift".</p>
+                        <span class="fw-bold d-block">500 MAD</span>
+                        <a href="#" class="btn shadow mt-3">Add to Cart </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special2-outfit-for-univ.jpeg" class="w-100" height="460px">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Asian style for work/univ ,two peices: "A stylish and
+                            comfortable outfit that is perfect for any occasion" </p>
+                        <span class="fw-bold d-block">400 MAD</span>
+                        <a href="#" class="btn shadow mt-3">Add to Cart </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special5-khimar.jpeg" class="w-100" height="460px">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">two in one : "khimar/Niqab + Abaya", colorful and
+                            Beautiful, "A high-quality outfit that will last for years."
+                        </p>
+                        <span class="fw-bold d-block">370 MAD</span>
+                        <a href="#" class="btn shadow mt-3">Add to Cart </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="special-4-egyp.jpeg" class="w-100" height="460px">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Egyptian style : two peices (skirt and loose shirt)
+                            "A flattering and elegant outfit that will make you feel your best."</p>
+                        <span class="fw-bold d-block">400 MAD</span>
+                        <a href="#" class="btn shadow mt-3">Add to Cart </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  end of special -->
+
+    <!-- Discount-->
+    <section id="offers" class="py-5">
+        <div class="container">
+            <div
+                class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="offers-content">
+                    <span class="text-black">
+                        Discount Up To 40%
+                    </span>
+                    <h2 class="mt-2 mb-4 text-black">Grand Sale Offer!</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--END Discount-->
+
+    <!-- Blogs-->
+    <section id="blogs" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Latest Blogs </h2>
+            </div>
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="blogs.jpg" height="300px">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Stay up-to-date on the latest hijab trends and fashion tips with our
+                            blog!
+                        </h4>
+                        <p class="card-text mt-3 text-muted">Check out our latest blog posts for inspiration on how to
+                            style your hijab...</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author : </span>Meriem Nafaa
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more...</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent  my-3">
+                    <img src="blog3.jpeg" height="300px">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Read our latest blog posts to learn more about the history and culture of
+                            hijab.
+                        </h4>
+                        <p class="card-text my-4  text-muted">Visit our blog now to learn more about hijab...</p>
+                        <p class="card-text">
+                            <small class="text-muted ">
+                                <span class="fw-bold">Author : </span>Hajar Sosso
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more...</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent  my-3">
+                    <img src="blog2 (1).jpeg" height="300px">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Shop our latest hijab collection inspired by our blog posts
+                        </h4>
+                        <p class="card-text my-4  text-muted">Subscribe to our blog for weekly updates on the latest
+                            hijab trends and fashion tips.</p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <span class="fw-bold">Author : </span>Salma Elasmai (one day Inchallah)
+                            </small>
+                        </p>
+                        <a href="#" class="btn">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blogs-->
+
+    <!-- about us-->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inlline-block ms-4">About Us</h2>
+                    </div>
+                    <p class="lead text-muted">At "A.Hijab", we believe that every woman deserves to feel confident in her clothes and
+                        beautiful in her hijab. That's why we offer a wide variety of stylish and affordable
+                        hijab-fashion-outfits & girls-essentials to choose from.
+                    </p>
+                    <p>We understand that finding the perfect hijab can be challenging, so we offer a variety of styles
+                        and fabrics to suit every need. Whether you're looking for a simple and elegant hijab for
+                        everyday wear or a statement piece for a special occasion, we have you covered.
+
+                        We also offer a variety of accessories to complement your hijab. 
+                         we have something for everyone. Our clothing is designed to be both
+                        stylish and modest, so you can feel confident and comfortable all day long.
+
+                        We're committed to
+                        providing our customers with the highest quality products and services possible. We hope you'll
+                        visit our store and see for yourself why "A.Hijab" is the best place to shop for hijab and
+                        hijab-fashion-outfits.
+                    </p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="WhatsApp Image 2023-11-05 à 16.34.24_1a8be50f.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us-->
+    <!-- popular-->
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">
+                    Popular of this year </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Top Rated</h3>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="popular noir cute.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">two peices : skirt & cute shirt for hijabi and not hijabi girls "black"</p>
+                            <span>280 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="popular nice green.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">two peices : skirt & cute shirt for hijabi and not hijabi girls "sage green"</p>
+                            <span>280 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="popular beaige.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">two peices : skirt & cute shirt for hijabi and not hijabi girls "beige"</p>
+                            <span>280 MAD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best selling</h3>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="outfit mode sederhana.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">three peices "unique & classy"</p>
+                            <span>300 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="popular dress.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Barbie dress "be a hijabi barbie"</p>
+                            <span>200 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start">
+                        <img src="popular black.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">two peices : skirt & cute shirt for hijabi and not hijabi girls "black"+"Cotton shirt"</p>
+                            <span>280 MAD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">One Sale</h3>
+                    <div class="d-flex align-items-start justufy-content-start justify-content-start">
+                        <img src="Hijab Boxe blue.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Boxe hijab gift " PASTEL BLUES AND GRAYS"</p>
+                            <span>155 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start justify-content-start">
+                        <img src="Hijab boxe brown.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Boxe hijab gift "Brown Mushrooms"</p>
+                            <span>155 MAD</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start justufy-content-start justify-content-start">
+                        <img src="Hijab boxe purple.jpeg" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Boxe hijab gift "Pink-Cream-purple Pastels"</p>
+                            <span>155 MAD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- and of  popular-->
+
+    <!-- GIRLS Essential -->
+    <section id="girls-essential" id="girls" class="py-5 container">
+
+        <div class="title text-center py-5">
+            <h2 class="position-relative d-inline-block">Girls Essential</h2><br>
+        </div>
+        <div class="title text-center py-5">
+            <h2 id="colorh2" class="position-relative d-inline-block">Skate shoes/Loafers/trainers..</h2>
+        </div>
+
+        <div class="special-list row row-cols-1 row-cols-ms-2 row-cols-lg-4 g-0">
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="skate4.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">300 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="skate 2.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">270 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Skate Shoes 1.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">350 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="skate5.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">180 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Sneaker.jpeg" class="w-100 "  height="320px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">270 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="skate3.jpeg" class="w-100 " height="320px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">250 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Two Tone Lace-up Front Skate Shoes (1).jpeg" class="w-100 " height="320px" >
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">250 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="skate.jpeg" class="w-100 " height="320px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">200 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+
+             <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Loafers3.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">250 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="loafers4.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">270 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="loafers2.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">200 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="loafers1.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">350 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of shoes-->
+        <div class="title text-center py-5">
+            <h2 id="colorh2" class="position-relative d-inline-block"> Hats/Bucket Hats/Beanies..</h2>
+        </div>
+
+        <div class="special-list row row-cols-1 row-cols-ms-2 row-cols-lg-4 g-0">
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="bucket (1).jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">45 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="beanies 2.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">45 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src= "hats.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">45 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src= "Corduroy Bucket Hat , Women's Bucket Hat , Harajuku, Festival Hat, Unisex Corduroy Hat, Casual Hat ,.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">45 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+          
+        </div>
+        <!-- end of hats-->
+
+        <div class="title text-center py-5">
+            <h2 id="colorh2" class="position-relative d-inline-block"> toot bags /accessories/Bracelets..</h2>
+        </div>
+
+        <div class="special-list row row-cols-1 row-cols-ms-2 row-cols-lg-4 g-0">
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="toot1.jpeg" height="360px" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">40 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="toot2.jpeg" height="360px" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">100 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="PAL toot (2) - Copie.jpeg" height="360px" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">50 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="PAL toot (1).jpeg" height="360px" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">30 MAD</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="acces2.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">5 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="acces1.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">30 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="acces.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">7 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Beautiful crunchies.jpeg" class="w-100 ">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">7 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+
+             <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="brac1.jpeg" class="w-100 " height="360px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">8 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="brac pal.jpeg" class="w-100 " height="360px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">8 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="2pcs Couple Butterfly Charm Magnetic Heart Decor Bracelet.jpeg" class="w-100 " height="360px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">8 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+            <div class="col p-2 text-center">
+                <div class="special-img">
+                    <img src="Eras Tour Friendship Bracelets.jpeg" class="w-100 " height="360px">
+                    <span class="position-absolute d-flex align-items-center justify-content-center text-danger fs-4">
+                    </span>
+                    <span class="fw-bold d-block mt-3">8 MAD (fore piece)</span>
+                    <a href="#" class="btn shadow mt-2">Add to Cart </a>
+                </div>
+            </div>
+        </div>
+        <!-- end of acces-->
+    </section>
+    <!-- end of- GIRLS Essential -->
+
+    <!-- News letter-->
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+                <p class="text-center text-muted"> We're so glad you've joined our community of hijabi girls and women. When you subscribe to our email list, you'll be the first to know about new arrivals, sales, and special promotions. You'll also receive exclusive discounts and offers that are only available to subscribers.</p>
+                <p class="text-center text-muted"><strong>"Shop our latest collection now and get 10% off your first order with code WELCOME10"</strong></p>
+                <div class="input-group mb-3 mt-3" >
+                    <input type="text" class="form-control" placeholder="Enter Your Email please ..">
+                    <button class="btn btn-primary-subtle" type="submit">Subscribe</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of News letter-->
+
+    <!--footer-->
+    <footer class="bg-dark py-2 m-0">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index3.html" class="text-uppercase text-decoration-none fs-3 brand text-white">A.Hijab </a>
+                   <h5 style="color:#B0C3D6 ;">Shipping costs:</h5>
+                   <p class="text-white m-0 " >
+                       - We offer free shipping on all orders over $50.<br>
+                      - For orders under $50, shipping is $5.
+                    </p>
+                   
+
+                    <h5 style="color:#B0C3D6 ;"> Returns policy:</h5>
+                       <p class="text-white m-0">
+                            - We accept returns within 30 days of purchase. <br>
+                            - Items must be returned in new and unused condition, with the original packaging. <br>
+                            - Customers are responsible for return shipping costs.  <br>
+                        </p>
+                    
+
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-0">
+                            <a href="#header" class="text-white opacity-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Home
+                            </a>
+                        </li>
+                        <li class="my-0">
+                            <a href="#collection" class="text-white opacity-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Collection
+                            </a>
+                        </li> <li class="my-0">
+                            <a href="#" class="text-white opacity-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>Blogs
+                            </a>
+                        </li> <li class="my-0">
+                            <a href="#girls-essential" class="text-white opacity-50 text-decoration-none " >
+                            <i class="fas fa-chevron-right me-1"></i>Girl's Essential
+                            </a>
+                        </li> <li class="my-0">
+                            <a href="#about" class="text-white opacity-50 text-decoration-none ">
+                            <i class="fas fa-chevron-right me-1"></i>About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light me-0">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2  opacity-50">
+                        <span class="me-1">
+                            <i class=" fas fa-map-marked-alt"></i>
+                        </span>
+                        <span fw-light>
+                            Bradi III, Marrakech, Morocco
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2  opacity-50">
+                        <span class="me-1">
+                            <i class=" fas fa-envelope"></i>
+                        </span>
+                        <span fw-light>
+                           A.hijab_ssia@gmail.com
+                        </span>
+                    </div>  <div class="d-flex justify-content-start align-items-start my-2  opacity-50">
+                        <span class="me-1">
+                            <i class=" fas fa-phone-alt"></i>
+                        </span>
+                        <span fw-light>
+                           +212 650572891
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-1">Follow Us</h5>
+                    <div >
+                        <ul class="list-unstyled d-flex ">
+                            <li>
+                                <a href="#" class="text-white opacity-50 text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white opacity-50 text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white opacity-50 text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white opacity-50 text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white opacity-50 text-decoration-none fs-4 me-4">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-white opacity-50 d-flex justify-content-end align-items-end px-5 m-0"> Copyright © 2023, Assia. All rights reserved. "the Palestine rights are not ?"</p>
+    </footer>
+    <!-- end of footer-->
+
+
+
+
+
+
+
+    <!-- jquery-->
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <!-- isotope js-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- custom js-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
